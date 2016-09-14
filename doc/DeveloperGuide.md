@@ -48,6 +48,20 @@ Priority | As a ... | I want to ... | So that I can...
 `* *` | user | hide [private contact details](#private-contact-detail) by default | minimize chance of someone else seeing them by accident
 `*` | user with many persons in the address book | sort persons by name | locate a person easily
 
+As a new user, I want to be able to see usage instructions so that I can refer to instructions when I forget how to use the App.
+
+As a user, I want to be able to add a person to AddressBook so that I can find that person's details when I want to at a later time.
+
+As a user, I want to delete a person from AddressBook so that I can remove entries of people that I no longer need.
+
+As a user, I want to be able to find a person by name so that I can locate the details of persons without having to go through the entire list.
+
+As a user, I want to be able to edit a person's details from AddressBook So that I don't have to delete and add back the same person from AddressBook.
+
+As a user, I want to be able to add people who may have same details for certain fields like name or email and still be able to find both of them when I try to locate them.
+
+As a user, I want to be hide the private contacts of other people so as to minimise the chances of someone else seeling them by accident.
+
 
 ## Appendix B : Use Cases
 
@@ -74,13 +88,37 @@ Use case ends.
 > 3a1. AddressBook shows an error message <br>
   Use case resumes at step 2
 
+#### Use case: Rename tag
+
+**MSS**
+
+1.The user finds all persons who have the friends tag
+2.Addressbook shows a list of persons
+3.User requests to change the name of the friends tag 
+4.User inputs the buddies tag
+5.Addressbook renames all friends tag with a buddies tag
+
+**Extensions**
+2a. The list is empty
+
+> Use case ends
+
+4a. The user inputs a tag that already exists
+
+>4a1. AddressBook shows an error message
+ Use case resumes at step 4
+ 
 ## Appendix C : Non Functional Requirements
 
 1. Should work on any [mainstream OS](#mainstream-os) as long as it has Java 8 or higher installed.
 2. Should be able to hold up to 1000 persons.
 3. Should come with automated unit tests and open source code.
 4. Should favor DOS style commands over Unix-style commands.
-
+5. Should be able to launch within 8 seconds
+6. Should not accidentally overwrite other perons' data
+7. Should be fast when doing functions like add or delete
+8. Should use the best searching algorithm to search for data
+9. Should be able be user-friendly
 ## Appendix D : Glossary
 
 ##### Mainstream OS

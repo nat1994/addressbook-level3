@@ -118,9 +118,8 @@ Use case ends.
 3. Should come with automated unit tests and open source code.
 4. Should favor DOS style commands over Unix-style commands.
 5. Should be able to launch within 8 seconds
-6. Should not accidentally overwrite other perons' data
-7. Should be fast when doing functions like add or delete
-8. Should use the best searching algorithm to search for data
+7. Should be able to run smoothly and fast
+8. Should be able to hold up to 1000 tags
 9. Should be able be user-friendly
 ## Appendix D : Glossary
 

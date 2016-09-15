@@ -92,20 +92,23 @@ Use case ends.
 
 **MSS**
 
-1.The user finds all persons who have the friends tag
-2.Addressbook shows a list of persons
-3.User requests to change the name of the friends tag 
-4.User inputs the buddies tag
-5.Addressbook renames all friends tag with a buddies tag
+1.The user finds all persons who have the certain tag
+2.AddressBook shows a list of persons
+3.User requests to change the name of the certain tag 
+4.User inputs the new tag
+5.AddressBook confirms this with the user
+6.User re-confirms with AddressBook
+5.AddressBook renames all of those tags with a new tag
 
 **Extensions**
 2a. The list is empty
 
-> Use case ends
+>AddressBook informs the user that the list is empty
+ Use case resumes at step 1
 
 4a. The user inputs a tag that already exists
 
->4a1. AddressBook shows an error message
+>4a1. AddressBook informs the user that the tag already exists
  Use case resumes at step 4
  
 ## Appendix C : Non Functional Requirements
